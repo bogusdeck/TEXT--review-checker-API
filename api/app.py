@@ -16,18 +16,24 @@ from nltk.corpus import stopwords
 from langchain_cohere import ChatCohere
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
+from dotenv import load_dotenv
 
 # Download stopwords data
 nltk.download("stopwords")
+load_dotenv()
 
 # Define Flask app
 app = Flask(__name__)
-
 CORS(app)
 # # Load the pre-trained model
 model = pickle.load(open("model.pkl", "rb"))
 
-llm = ChatCohere(cohere_api_key = "XjFEJxdARMVU166udeN6mzSzahWQbv1qrrmpNmKa")
+
+cohere_api_key = os.getenv("COHERE_API_KEY")
+if not cohere_api_key:
+    raise ValueError("Cohere API key not found. Please set the COHERE_API_KEY environment variable.")
+
+llm = ChatCohere(cohere_api_key = cohere_api_key)
 
 prompt = ChatPromptTemplate.from_messages([
     ("system", "I want you to check the authenticity of the review written below and check if the given product review detail is matching with other details and also check the validity of the text review that it is worth enough to give reward points and I want the answer in one word 'Original' or 'Fake' "),
