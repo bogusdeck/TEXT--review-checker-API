@@ -3,7 +3,9 @@
   <img src="https://github.com/user-attachments/assets/2ee9d05d-ee43-4ad9-baa0-b3393acd3e61" />
 </p>
 
-[https://reviewreward-production.up.railway.app](https://reviewreward-production.up.railway.app)
+<p align="center">
+https://reviewreward-production.up.railway.app
+</p>
  
 # Review Authenticity Checker API
 
