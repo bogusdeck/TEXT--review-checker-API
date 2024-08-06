@@ -3,6 +3,8 @@
   <img src="https://github.com/user-attachments/assets/2ee9d05d-ee43-4ad9-baa0-b3393acd3e61" />
 </p>
 
+[https://reviewreward-production.up.railway.app](https://reviewreward-production.up.railway.app)
+ 
 # Review Authenticity Checker API
 
 This project is a Flask-based API designed to check the authenticity of text reviews. It uses machine learning models to determine if a review is genuine or fake. The API supports both manual text review and automated checks using Cohere's language model.
