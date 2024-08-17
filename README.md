@@ -6,7 +6,19 @@
 <p align="center">
 https://reviewreward-production.up.railway.app
 </p>
- 
+
+
+<div align="center">
+<p>If you like my work, consider buying me a coffee! ☕️</p>
+</div>
+
+
+<div align="center">
+<a href="https://www.buymeacoffee.com/bogusdeck" target="_blank">
+    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me a Coffee" width="150" />
+</a>
+</div>
+
 # Review Authenticity Checker API
 
 This project is a Flask-based API designed to check the authenticity of text reviews. It uses machine learning models to determine if a review is genuine or fake. The API supports both manual text review and automated checks using Cohere's language model.
